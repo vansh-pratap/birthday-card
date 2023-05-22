@@ -1,0 +1,166 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo:before {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(112, 110, 112, 0.437);
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .align {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    size: 80%;
+    background: rgba(249, 219, 187, 0.8);
+    color: black;
+    width: 90%;
+    padding: 20px 60px;
+  }
+
+  .content h1 {
+    font-size: 60px;
+    color: #2E3840;
+    font-family: 'Sacramento', cursive;;
+    padding: 50px;
+  }
+  
+  .content p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+  }
+
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    border-radius: 20px;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #191825;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-image: url('https://img.freepik.com/free-vector/colorful-confetti-background-flat-style_23-2147772665.jpg?w=740&t=st=1678190317~exp=1678190917~hmac=4f30ac7060415d9e288fc4a01b4ece25d0e4c9040c1a41126e425c800891f948');
+    background-size: cover;
+    width: 300px;
+    font-size: 40px;
+    border: none;
+    /* background: #FCFFE7; */
+    color: #393053;
+  }
+
+  .popup {
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 213, 168);
+    width: 25%;
+    height: 75%;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5),
+    0 0 0 1000px rgba(249,219,187,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 20px;
+    visibility: hidden;
+}
+
+.popup section {
+  background-color: rgb(221, 247, 227, 0.7);
+}
+
+#link {
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+#link:hover {
+  background-color: #fff;
+  font-size: 53px;
+  color: #393053;
+}
+
+.popup p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.close {
+  border: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: white;
+    cursor: pointer;
+}
+
+.close :hover {
+  border: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #7A3E65;
+    color: black;
+    cursor: pointer;
+}
+
+.secret {
+  color: #2E3840;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.secret:hover {
+  font-size: 100px;
+  text-decoration: none;
+}
+
+.secret-2 {
+  color: #2E3840;
+  text-decoration: none;
+  transition: 0s;
+}
+
+.secret-2:hover {
+  content: 'oops';
+  font-size: 10px;
+  color: #2E3840;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+
+.popup.active {
+    visibility: visible;
+}
+
+.secret-3 {
+  color: #191825;
+  text-decoration: none;
+}
